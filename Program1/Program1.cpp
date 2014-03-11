@@ -25,10 +25,10 @@ class Tablica
 
 
 	public:
-		Tablica(){}
+		Tablica():tablica(NULL),n(0){}
 		virtual ~Tablica(){delete [] tablica;}
 		void menu();
-			Tablica & operator= (const Tablica<T> &t)
+			Tablica & operator =(const Tablica<T> &t)
 			{
             return *this;
             }
@@ -38,22 +38,25 @@ class Tablica
 
 
 template <class T>
-void Tablica <T>::WczytanieTablicyZKonsoli() {
+void Tablica <T>::WczytanieTablicyZKonsoli() 
+{
 
-for(int i = 0; i < n; i++) {
+	for(int i = 0; i < n; i++) 
+	{
 
-cin >> tablica[i];
+	cin >> tablica[i];
 
-}
+	}
 }
 
 
 template <class T>
-void Tablica <T>::WyswietlenieTablicyWKonsoli() {
-for(int i = 0; i < n; i++) {
-cout << tablica[i] << endl;
-}
-
+void Tablica <T>::WyswietlenieTablicyWKonsoli() 
+{
+	for(int i = 0; i < n; i++) 
+	{
+	cout << tablica[i] << endl;
+	}
 }
 
 template <class T>
@@ -62,11 +65,12 @@ void Tablica <T>::WczytanieTablicyZPlikuTekstowego()
 
 	int i=0;
 	int j=0;
-    tablica = new T[n];
+    
 
 	ifstream liczby;
 
 	liczby.open("liczby.txt");
+	tablica = new T[n];
 	while(liczby.good())
 	{
 		liczby >> tablica[i];
@@ -163,10 +167,11 @@ void Tablica <T>::WczytanieZPlikuBinarnego()
 {
 	int i=0;
 	int j=0;
-    tablica = new T[n];
+    
 	ifstream liczbybinarne;
 
 	liczbybinarne.open("liczbybinarne.bin", ios::binary);
+	tablica = new T[n];
 	while(liczbybinarne.good())
 	{
 		liczbybinarne.read((char*)&tablica[i],sizeof(int));
