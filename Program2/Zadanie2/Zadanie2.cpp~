@@ -74,8 +74,8 @@ void Lista<T>::UsunPierwszyElement()
 {
     Lista* a;
     a=head->next; 	//tworzymy zmienna wskazujaca na nastepny elemnt 
-    a->prev=0;		//zeruje wskaznik na dotychczasowy head
     delete head;	//usuwamy dotychczasowy head
+    a->prev=0;		//zeruje wskaznik na dotychczasowy head
     head=a;			//pod head podstawiamy nastepna wartosc
 }
 

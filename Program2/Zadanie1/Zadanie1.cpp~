@@ -8,13 +8,11 @@ class Stos {
 
         Stos *next;		//zmienna wskaznikowa wskazujaca na nastepny element
         T dana; 		//zmienna okreslonego typu przechowujaca wartosc
-		
+		int rozmiar;	//zmienna sluzaca do liczenia rozmiaru stosu
 		
 
 
     public:
-		static int rozmiar;	//zmienna sluzaca do liczenia rozmiaru stosu
-
 		void DodajElementNaPoczatek(T item);		
         void WyswietlListe();						//metody pozwalajace na podstawowe operacje na stosie
         void UsunElementZPrzodu();
@@ -25,9 +23,6 @@ class Stos {
 		virtual ~Stos(){}  //destruktor
     };
 
-
-template <class T>
-int Stos<T>::rozmiar=0;
 
 template <class T>
 void Stos<T>::DodajElementNaPoczatek(T item)
