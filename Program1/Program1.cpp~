@@ -22,6 +22,7 @@ class Tablica
 		void WypelnianieTablicyLosowymi();
 		void ZapisywanieDoPlikuBinarnego();
 		void WczytanieZPlikuBinarnego();
+		T DynamicznaKopia();
 
 
 	public:
@@ -188,6 +189,21 @@ void Tablica <T>::WczytanieZPlikuBinarnego()
 
 
 template <class T>
+T Tablica<T>::DynamicznaKopia()
+{
+	T *tabKopia;
+	tabKopia = new T[n];
+	for(int i=0;i<n;i++)
+		tabKopia[i] = tablica[i];
+	for(int j=0;j<n;j++)
+		cout<<tabKopia[j]<<endl;
+	return *tabKopia;
+}
+
+
+
+
+template <class T>
 void Tablica <T>::menu()
 {
 
@@ -201,6 +217,7 @@ void Tablica <T>::menu()
 		cout << "5.Wczytywanie z pliku binarnego"<<endl;
 		cout << "6.Zapisywanie do pliku binarnego"<<endl;
 		cout << "7.Wypełnianie tablicy liczbami losowymi"<<endl;
+		cout << "8.Dynamiczna kopia tablicy + wyswietlenie"<<endl;
 		cout << "0.Koniec"<<endl;
 
 		cout << "Wybierz opcje";
@@ -227,6 +244,9 @@ void Tablica <T>::menu()
 				ZapisywanieDoPlikuBinarnego(); break;
 			case 7:
 				WypelnianieTablicyLosowymi(); break;
+			case 8:
+				DynamicznaKopia(); break;
+				
 
 		}
 
@@ -239,8 +259,8 @@ void Tablica <T>::menu()
 int main()
 {
 	srand(time(0));
-    Tablica <int>*t = new Tablica <int>;
-    t->menu();
+   	Tablica<int> t;
+    t.menu();
 
 return 0;
 }
