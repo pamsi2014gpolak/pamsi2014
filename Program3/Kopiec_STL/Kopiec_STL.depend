@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1395756230 source:/home/grzegorz/PAMSI/Program3/Kopiec_STL/main.cpp
+	<iostream>
+	<algorithm>
+	<vector>
+	<ctime>
+	<cstdlib>
+

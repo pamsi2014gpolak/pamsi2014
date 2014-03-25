@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1395602990 source:/home/grzegorz/PAMSI/Program3/Kolejka_STL/main.cpp
+	<iostream>
+	<queue>
+
