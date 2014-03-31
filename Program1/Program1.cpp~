@@ -39,6 +39,9 @@ class Tablica
 template <class T>
 void Tablica <T>::WczytanieTablicyZKonsoli() 
 {
+	cout << "Podaj rozmiar tablicy\n";
+    cin >> n;
+    tablica = new T[n];
 
 	for(int i = 0; i < n; i++) 
 	{
@@ -230,9 +233,7 @@ void Tablica <T>::menu()
 		{
 			case 0: break;
 			case 1:
-                cout << "Podaj rozmiar tablicy\n";
-                cin >> n;
-                tablica = new T[n];
+                
                 WczytanieTablicyZKonsoli();
                 break;
 			case 2:
