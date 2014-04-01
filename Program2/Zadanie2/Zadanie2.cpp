@@ -72,22 +72,42 @@ void Lista<T>::DodajElementNaKoniec(T item)
 template <class T>
 void Lista<T>::UsunPierwszyElement()
 {
-    Lista* a;
-    a=head->next; 	//tworzymy zmienna wskazujaca na nastepny elemnt 
-    a->prev=0;		//zeruje wskaznik na dotychczasowy head
-    delete head;	//usuwamy dotychczasowy head
-    head=a;			//pod head podstawiamy nastepna wartosc
+	if(obecny==0)
+		cout<<"Lista jest pusta"<<endl;
+	else	
+
+	if(head!=tail)
+	{
+		Lista* a;
+		a=head->next; 	//tworzymy zmienna wskazujaca na nastepny elemnt 
+		a->prev=0;		//zeruje wskaznik na dotychczasowy head
+		delete head;	//usuwamy dotychczasowy head
+		head=a;			//pod head podstawiamy nastepna wartosc
+	}else{
+		head=0; tail=0; obecny=0;
+		}
+	
 }
 
 
 template <class T>
 void Lista<T>::UsunOstatniElement()
 {
-    Lista* a;		//tworzymy zmienna wskazujaca na poprzedni elemnt 
-    a=tail->prev;
-    a->next=0;		//zeruje wskaznik na dotychczasowy tail
-    delete tail;	//usuwam wskaznik na dotychczasowy tail
-    tail=a;			//pod tail podstawiamy poprzedzajaca wartosc
+	if(obecny==0)
+		cout<<"Lista jest pusta"<<endl;
+	else	
+	
+	if(head!=tail)
+	{
+
+		Lista* a;		//tworzymy zmienna wskazujaca na poprzedni elemnt 
+		a=tail->prev;
+		a->next=0;		//zeruje wskaznik na dotychczasowy tail
+		delete tail;	//usuwam wskaznik na dotychczasowy tail
+		tail=a;			//pod tail podstawiamy poprzedzajaca wartosc
+	}else{
+		head=0; tail=0; obecny=0;
+		}
 }
 
 
@@ -121,6 +141,7 @@ void Lista<T>::menu()
 		cout << "4.Usun element z konca"<<endl;
 		cout << "5.Wyswietl liste"<<endl;
 		cout << "6.Wyswietl liste od konca"<<endl;
+		cout << "0.Koniec"<<endl;
 
 		cout << "Wybierz opcje ";
 		cin >> opcja;
