@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1397156311 source:/home/grzegorz/pamsi2014/Program4/Eksperyment/Eksperyment/main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<boost/progress.hpp>
+	<random>
+
+1397929427 source:/home/grzegorz/PAMSI/Program4/Eksperyment/Eksperyment/main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+	<cmath>
+	<vector>
+	<boost/progress.hpp>
+	<random>
+
+1398207994 source:/home/grzegorz/pamsi2014/Program4/main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+	<cmath>
+	<vector>
+	<boost/progress.hpp>
+	<random>
+
