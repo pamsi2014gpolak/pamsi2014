@@ -1,0 +1,56 @@
+
+ liczba Wierzcholkow: 750 prawdopodobienstwo: 0.25
+Kruskal lista
+
+czas(ms): 674
+Kruskal macierz
+
+czas(ms): 320.5
+Prim lista
+
+czas(ms): 189970
+Prim macierz
+
+czas(ms): 190162
+
+ liczba Wierzcholkow: 750 prawdopodobienstwo: 0.5
+Kruskal lista
+
+czas(ms): 914
+Kruskal macierz
+
+czas(ms): 480.5
+Prim lista
+
+czas(ms): 252237
+Prim macierz
+
+czas(ms): 261830
+
+ liczba Wierzcholkow: 750 prawdopodobienstwo: 0.75
+Kruskal lista
+
+czas(ms): 844.5
+Kruskal macierz
+
+czas(ms): 405
+Prim lista
+
+czas(ms): 246384
+Prim macierz
+
+czas(ms): 240521
+
+ liczba Wierzcholkow: 750 prawdopodobienstwo: 1
+Kruskal lista
+
+czas(ms): 861.5
+Kruskal macierz
+
+czas(ms): 410
+Prim lista
+
+czas(ms): 239940
+Prim macierz
+
+czas(ms): 240984

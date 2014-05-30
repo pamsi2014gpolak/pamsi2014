@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1401483791 source:c:\users\grzegorz\documents\codeblocks\prim_kruskal\main.cpp
+	<iostream>
+	<Windows.h>
+	<cmath>
+	<random>
+	<string>
+	<fstream>
+	<iomanip>
+	<vector>
+	<queue>
+
