@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1401566519 source:c:\users\grzegorz\documents\codeblocks\dijkstra\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<queue>
+	<list>
+	<functional>
+	<Windows.h>
+	<ctime>
+	<algorithm>
+
