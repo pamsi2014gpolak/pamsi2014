@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1402420824 source:c:\users\grzegorz\documents\codeblocks\ford_fulkerson\main.cpp
+	<fstream>
+	<iostream>
+	<list>
+	<time.h>
+	<string>
+
