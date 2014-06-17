@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1403028692 source:c:\users\grzegorz\documents\codeblocks\gra\game.cpp
+	"Game.h"
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<iostream>
+
+1403028664 c:\users\grzegorz\documents\codeblocks\gra\game.h
+
+1403028700 source:c:\users\grzegorz\documents\codeblocks\gra\interface.cpp
+	"Interface.h"
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<iostream>
+	<string>
+	<ctime>
+
+1403029696 c:\users\grzegorz\documents\codeblocks\gra\interface.h
+	"Game.h"
+
+1403024821 source:c:\users\grzegorz\documents\codeblocks\gra\main.cpp
+	"Game.h"
+	"Interface.h"
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<iostream>
+
